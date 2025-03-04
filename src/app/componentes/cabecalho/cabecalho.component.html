@@ -1,0 +1,14 @@
+<header class="cabecalho">
+  <img src="/assets/logo.png" class="logo" alt="logo">
+  @if (!telaInicial) {
+    <div class="link">
+      <button class="voltar" routerLink="/lista-contatos">
+        <img src="assets/arrow-left.png" alt="" />
+        <span>Voltar</span>
+      </button>
+    </div>
+
+  }
+  <img [src]="bannerSrc" class="banner" alt="banner">
+  <h1 [innerText]="titulo" class="titulo"></h1>
+</header>
